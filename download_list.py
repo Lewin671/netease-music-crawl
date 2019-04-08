@@ -1,7 +1,7 @@
 # encoding=utf8
 import requests
 from lxml import etree
-from setting import HEADERS
+from setting import HEADERS,TIME_OUT
 from music_item import MusicItem
 
 
@@ -9,7 +9,7 @@ def download_list():
     play_url = 'http://music.163.com/playlist?id=2217611952'
 
     s = requests.session()
-    response = s.get(play_url, headers=HEADERS)
+    response = s.get(play_url, headers=HEADERS,timeout=TIME_OUT)
 
     html = etree.HTML(response.text)
 

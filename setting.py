@@ -9,6 +9,9 @@ MAX_THREAD_NUMBER = 5
 # 最大尝试深度，也就是说，如果一个音乐文件下载失败，那么最多重复下载10次，如果还下载失败，则放弃下载该文件
 MAX_DEEP = 10
 
+# 每次请求的超时时间
+TIME_OUT = 5
+
 # 请求头部分，不需要改变
 HEADERS = {
     'Referer': 'http://music.163.com/',

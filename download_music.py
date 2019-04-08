@@ -1,12 +1,14 @@
 # encoding=utf8
 import os
 import requests
-from setting import HEADERS, RESOURCE_PATH
+from setting import HEADERS, RESOURCE_PATH,TIME_OUT
 import urllib
 import threading
 from setting import logger, MAX_DEEP
 import time
 import re
+import socket
+socket.setdefaulttimeout(TIME_OUT)
 
 pattern = re.compile('[\ /\\?@#$&|]')
 
