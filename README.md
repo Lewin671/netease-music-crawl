@@ -22,6 +22,17 @@
 ## 运行程序
 在终端运行`sh start.sh`即可。
 
+## 播放音乐
+在resource文件夹下有一个play.sh脚本，在终端中使用bash解释器：`bash play.sh`即可随机播放。如果想要切换音乐，按ctrl+c，如果想要关闭音乐，按ctrl+z。
+
+如果想要单纯地播放一首音乐，直接用play命令即可。
+
+注： 播放音乐需要安装sox：
+```
+sudo apt-get install sox
+sudo apt-get install sox libsox-fmt-all
+```
+
 ## 日志
 当允许程序后，所有的日志都存储在了`log.txt`（运行时创建），所以如果你需要查看问题或者是运行的情况的时候，你可以查看`log.txt`文件。
 
