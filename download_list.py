@@ -3,6 +3,7 @@ import requests
 from lxml import etree
 from setting import HEADERS,TIME_OUT
 from music_item import MusicItem
+import setting
 
 
 def download_list():
