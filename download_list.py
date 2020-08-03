@@ -6,7 +6,8 @@ from music_item import MusicItem
 
 
 def download_list():
-    play_url = 'http://music.163.com/playlist?id=2217611952'
+    play_url = 'http://music.163.com/playlist?id='+str(setting.PLAY_LIST_ID)
+    # play_url = 'http://music.163.com/playlist?id=2217611952'
 
     s = requests.session()
     response = s.get(play_url, headers=HEADERS,timeout=TIME_OUT)
